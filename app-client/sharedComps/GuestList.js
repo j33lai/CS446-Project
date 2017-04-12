@@ -78,7 +78,6 @@ export default class GuestList extends Component {
       unlimited: cap > 0 ? false : true,
       limited: cap > 0 ? cap : -1
     });
-    console.log('should print ' + cap)
   }
 
   _loadCap() {
@@ -149,7 +148,6 @@ export default class GuestList extends Component {
       this.props.firebaseApp.database().ref('Notifications/'+ id),
       this.props.eventId,
       Constants.messages[3] + this.props.name)
-      //console.log('should print ' + this.state.limited)
   }
 
   _accept(rowID) {

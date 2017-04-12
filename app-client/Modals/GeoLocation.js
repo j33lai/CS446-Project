@@ -27,7 +27,7 @@ export default class GeoLocation extends Component {
       })
     }
   }
-  
+
   _onDragMarkerEnd(data) {
     if (data.nativeEvent.coordinate) {
       this.setState({
@@ -35,15 +35,15 @@ export default class GeoLocation extends Component {
       })
     }
   }
-  
+
   _onMarkerPress(data) {
-    console.log("marker")
+    //console.log("marker")
   }
-  
+
   _updateGeoLocation() {
     this.props.modalParent._updateGeoCoordinate(this.state.markerCoordinate)
   }
-  
+
   _leaveModal() {
     this.props.modalParent._setModalVisible(false)
   }

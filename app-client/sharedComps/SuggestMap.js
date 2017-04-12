@@ -57,7 +57,6 @@ export default class SuggestMap extends Component {
     snapshot.forEach(
       function(data) {
         value = data.val()
-        console.log('location', value)
         if (value.Status == 0) {
           locationData = {
             id: data.key,
@@ -76,9 +75,6 @@ export default class SuggestMap extends Component {
     })
 
     this._suggest(averageLatLng(allLocations))
-
-    console.log('location1', allLocations)
-    console.log('location2', locations)
   }
 
   _loadLocation() {
@@ -92,8 +88,6 @@ export default class SuggestMap extends Component {
       this.setState({
         markerCoordinate: data.nativeEvent.coordinate
       })
-      //console.log(data.nativeEvent)
-      //console.log(this.state.markerCoordinate.latitude)
     }
   }
 
@@ -102,16 +96,11 @@ export default class SuggestMap extends Component {
       this.setState({
         markerCoordinate: data.nativeEvent.coordinate
       })
-      //console.log(data.nativeEvent)
-      //console.log(this.state.markerCoordinate.latitude)
     }
   }
 
   _onMarkerPress(data) {
-    //console.log("marker", data.nativeEvent)
-    //console.log("marker", data != undefined ? '1:' + data.location.state_code : '2')
     if (!data.nativeEvent) {
-      console.log("marker", data.location.display_address)
       this.setState({
         selectedPlace: data,
         selectedAddress: data.location.display_address.join(", ")

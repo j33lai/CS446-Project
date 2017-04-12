@@ -1,4 +1,4 @@
-package com.blink;
+package com.crashtestdummies.blink;
 
 import android.app.Application;
 import android.util.Log;

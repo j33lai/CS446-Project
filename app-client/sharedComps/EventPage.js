@@ -426,7 +426,6 @@ export default class EventPage extends Component {
   }
 
   _loadAvatar(url) {
-    //console.log('avatar', url)
     if (url) {
       this.setState({
         avatarSource: {uri: url}

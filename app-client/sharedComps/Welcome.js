@@ -66,7 +66,7 @@ export default class Welcome extends Component {
             console.log(error)
             alert('Fail to fetch facebook information: ' + error.toString());
           } else {
-            console.log(result)
+            //console.log(result)
             //alert('Success fetching data: ' + result.picture.data.url.toString());
             var passProps = {
               firebaseApp: firebaseApp,

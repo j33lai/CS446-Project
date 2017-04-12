@@ -1,4 +1,4 @@
-package com.blink;
+package com.crashtestdummies.blink;
 
 import android.content.Intent;
 

@@ -29,7 +29,7 @@ export default class SuggestMap extends SharedSuggestMap {
         identifier = {data.id}
         coordinate={data.location.coordinate}
         onPress={this._onMarkerPress.bind(this,data)}
-        image = {require('../img/location_marker.png')}
+        image = {require('../img/location_marker_ios.png')}
         >
       </MapView.Marker>
     )
@@ -40,7 +40,7 @@ export default class SuggestMap extends SharedSuggestMap {
       <MapView.Marker
         key = {data.id}
         coordinate={data.location}
-        image = {require('../img/user_marker.png')}>
+        image = {require('../img/user_marker_ios.png')}>
       </MapView.Marker>
     )
   }

@@ -177,7 +177,7 @@ export default class CreateEvent extends Component {
 
   _onImage() {
     ImagePicker.showImagePicker(Constants.ImagePickerOptions, (response) => {
-      console.log('Response = ', response);
+      //console.log('Response = ', response);
 
       if (response.didCancel) {
         console.log('User cancelled image picker');

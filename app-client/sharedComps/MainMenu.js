@@ -79,11 +79,9 @@ export default class MainMenu extends Component {
     var test = '1'
     snapshot.forEach(function(data) {
       if (data.val().Location == 'Waterloo') {
-        console.log(data.key)
         test = data.key
       }
     })
-    //console.log(test)
     var guestData = {
        'Name': 'Guest',
        'Host': false,
